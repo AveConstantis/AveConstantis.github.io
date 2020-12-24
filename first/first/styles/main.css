@@ -1786,6 +1786,10 @@ ul {
           justify-content: space-between;
 }
 
+.package .swiper-pagination {
+  position: static;
+}
+
 .package .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
