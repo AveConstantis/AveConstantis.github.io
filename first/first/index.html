@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+
+    <header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-wrapper">
+                <button class="header__top-btn" id="show-info">Информация</button>
+                <div class="header__top-info" id="info">
+                    <ul class="header__top-list">
+                        <li class="header__top-item">
+                            <div class="header__top-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            Живой чат
+                        </li>
+                        <li class="header__top-item">
+                            <div class="header__top-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <a href="tel:+91 254 878 547" class="header__top-link">+91 254 878 547</a>
+                        </li>
+                        <li class="header__top-item">
+                            <div class="header__top-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <a href="mailto:yourmail@info.com" class="header__top-link">yourmail@info.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__top-icons">
+                    <ul class="header__top-settings">
+                        <li class="header__top-set">
+                            <i class="fas fa-shopping-cart"></i>
+                        </li>
+                        <li class="header__top-set">
+                            <i class="fas fa-user"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom" id="header">
+        <div class="container">
+            <div class="header__bottom-wrapper">
+                <div class="header__logo">
+                    <img src="./images/logo.svg" alt="" class="header__logo-picture">
+                </div>
+                <nav class="header__nav" id="menu">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#intro" class="header__list-link" id="link">Главная</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#hosting" class="header__list-link" id="link">Хостинг</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#services" class="header__list-link" id="link">Сервисы</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#pricing" class="header__list-link" id="link">Пакеты</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#contact" class="header__list-link" id="link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__bottom-menu" id="show-menu">
+                    <span class="header__bottom-line"></span>
+                    <span class="header__bottom-line"></span>
+                    <span class="header__bottom-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="site-wrapper" id="site-wrapper">
+        <div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__wrapper">
+            <ul class="intro__social">
+                <li class="intro__social-item"><a href="#!" class="intro__social-link">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+                <li class="intro__social-item"><a href="#!" class="intro__social-link">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li class="intro__social-item"><a href="#!" class="intro__social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a></li>
+                <li class="intro__social-item"><a href="#!" class="intro__social-link">
+                    <i class="fab fa-skype"></i>
+                </a></li>
+            </ul>
+           <div class="intro__content">
+            <h1 class="intro__title">
+               Создай свой сайт с Bhost
+            </h1>
+            <div class="swiper-container" id="intro-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="intro__picture">
+                            <img src="./images/introsvg.svg" alt="">
+                            <span class="intro__overlay">40%</span>
+                        </div>
+                        <p class="intro__desc">
+                            экономия денег более 40%</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="intro__picture">
+                            <img src="./images/introsvg.svg" alt="">
+                            <span class="intro__overlay">$1.3</span>
+                        </div>
+                        <p class="intro__desc">
+                            от $1.45 в год</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="intro__picture">
+                            <img src="./images/introsvg.svg" alt="">
+                            <span class="intro__overlay">40%</span>
+                        </div>
+                        <p class="intro__desc">Поддержка 24/7 days</p>
+                    </div>
+                </div>
+            </div>
+            <button class="intro__btn">
+                Начать
+            </button>
+           </div>
+           <div class="intro__btns">
+                <button class="swiper-button-next"></button>
+                <button class="swiper-button-prev"></button>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+        <section class="experience" id="services">
+    <div class="container">
+        <div class="experience__wrapper">
+            <div class="experience__content">
+                <div class="experience__text">
+                    <h2 class="experience__title">
+                        Мы опытные!
+                    </h2>
+                    <p class="experience__desc">
+                        Без лучшего веб-хостинга ваша способность запустить успешный веб-сайт будет серьезно затруднена. За ваш бизнес борется огромное количество провайдеров веб-хостинга.
+                    </p>
+                    <div class="experience__desc">
+                        У нас есть опыт, последние 15 лет мы являемся лидерами в сфере хостинга. если вам нужны услуги хостинга? мы с нетерпением ждем вас.
+                    </div>
+                    <div class="experience__desc">
+                        У нас есть опыт, последние 15 лет мы являемся лидерами в сфере хостинга. если вам нужны услуги хостинга? мы с нетерпением ждем вас.
+                    </div>
+                    <div class="experience__desc">
+                        У нас есть опыт, последние 15 лет мы являемся лидерами в сфере хостинга. если вам нужны услуги хостинга? мы с нетерпением ждем вас.
+                    </div>
+                </div>
+            </div>
+            <div class="experience__img">
+                <img src="./images/experience.png" alt="" class="experience__picture">
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="domain">
+    <div class="container">
+        <div class="domain__wrapper">
+            <div class="domain__text">
+                <h2 class="domain__title">            
+                    Найдите свое доменное имя
+                </h2>
+                <p class="domain__desc">
+                    Начиная с $1.65 в год!
+                </p>
+            </div>
+            <div class="domain__search" >
+                <form action="#!" class="domain__form" id="future-parent">
+                    <div class="domain__form-place" id="prev-parent">
+                        <i class="domain__form-search fas fa-search"></i>
+                        <input type="text" name="" id="" class="domain__form-input">
+                        <button class="domain__form-btn" id="original">Поиск</button>
+                    </div>
+                    <div class="domain__form-table">
+                        <div class="domain__form-item">
+                            <input type="checkbox" name="" id="com" class="domain__form-checkbox">
+                            <div class="domain__form-fakecheck"></div>
+                            <label for="com" class="domain__form-label">.com / $3</label>
+                        </div>
+                        <div class="domain__form-item">
+                            <input type="checkbox" name="" id="org" class="domain__form-checkbox">
+                            <div class="domain__form-fakecheck"></div>
+                            <label for="org" class="domain__form-label">.org / $2</label>
+                        </div>
+                        <div class="domain__form-item">
+                            <input type="checkbox" name="" id="net" class="domain__form-checkbox">
+                            <div class="domain__form-fakecheck"></div>
+                            <label for="net" class="domain__form-label">.net / $2</label>
+                        </div>
+                        <div class="domain__form-item">
+                            <input type="checkbox" name="" id="edu" class="domain__form-checkbox">
+                            <div class="domain__form-fakecheck"></div>
+                            <label for="edu" class="domain__form-label">.edu/ $2</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="build">
+    <div class="container">
+        <div class="build__wrapper">
+            <div class="build__text">
+                <h2 class="build__title">
+                    Как создать свой сайт ?
+                </h2>
+                <p class="build__desc">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teor invidunt ut abore et dolore magnaLorem ipsum dolor sit amet, lorem ipsum dollar.
+                </p>
+            </div>
+            <div class="build__wrapper-table">
+                <div class="build__wrapper-item">
+                    <div class="build__wrapper-picture">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="build__wrapper-svg">
+                            <defs>
+                                <lineargradient id="grd1" gradientunits="userSpaceOnUse"  x1="0" y1="70" x2="70" y2="0">
+                                    <stop offset="0" stop-color="#31a9e1"  />
+                                    <stop offset="1" stop-color="#9c34c0"  />
+                                </lineargradient>
+                            </defs>
+                            <style>
+                                tspan { white-space:pre }
+                                .shp0 {transition: 0.5s ease-in-out;}
+                            </style>
+                            <g id="how it works"><g id="details"><g id="domain"><g id="number"><path class="shp0" id="Ellipse 3" d="M35 0c19.33 0 35 15.67 35 35S54.33 70 35 70 0 54.33 0 35 15.67 0 35 0z" fill="none" stroke="#00aeef" stroke-linecap="round" stroke-dasharray="0,5"/></g></g></g></g>
+                        </svg>
+                        <span class="build__wrapper-number">1</span>
+                    </div>
+                    <h3 class="build__wrapper-title">
+                        Домен
+                    </h3>
+                    <p class="build__wrapper-desc">
+                        Найдите идеальный пакет веб-хостинга для вас, лучшие услуги хостинга. Присоединиться
+                        сейчас и получите домен бесплатно!
+                    </p>
+                </div>
+                <div class="build__wrapper-item">
+                    <div class="build__wrapper-picture">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="build__wrapper-svg">
+                            <defs>
+                                <lineargradient id="grd1" gradientunits="userSpaceOnUse"  x1="0" y1="70" x2="70" y2="0">
+                                    <stop offset="0" stop-color="#31a9e1"  />
+                                    <stop offset="1" stop-color="#9c34c0"  />
+                                </lineargradient>
+                            </defs>
+                            <style>
+                                tspan { white-space:pre }
+                                .shp0 {transition: 0.5s ease-in-out;}
+                            </style>
+                            <g id="how it works"><g id="details"><g id="domain"><g id="number"><path class="shp0" id="Ellipse 3" d="M35 0c19.33 0 35 15.67 35 35S54.33 70 35 70 0 54.33 0 35 15.67 0 35 0z" fill="none" stroke="#00aeef" stroke-linecap="round" stroke-dasharray="0,5"/></g></g></g></g>
+                        </svg>
+                        <span class="build__wrapper-number">2</span>
+                    </div>
+                    <h3 class="build__wrapper-title">
+                        Хостинг
+                    </h3>
+                    <p class="build__wrapper-desc">       
+                        Услуги хостинга веб-сайтов - это, по сути, участок земли в Интернете, на котором находится ваша витрина.
+                    </p>
+                </div>
+                <div class="build__wrapper-item">
+                    <div class="build__wrapper-picture">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="build__wrapper-svg">
+                            <defs>
+                                <lineargradient id="grd1" gradientunits="userSpaceOnUse"  x1="0" y1="70" x2="70" y2="0">
+                                    <stop offset="0" stop-color="#31a9e1"  />
+                                    <stop offset="1" stop-color="#9c34c0"  />
+                                </lineargradient>
+                            </defs>
+                            <style>
+                                tspan { white-space:pre }
+                                .shp0 {transition: 0.5s ease-in-out;}
+                            </style>
+                            <g id="how it works"><g id="details"><g id="domain"><g id="number"><path class="shp0" id="Ellipse 3" d="M35 0c19.33 0 35 15.67 35 35S54.33 70 35 70 0 54.33 0 35 15.67 0 35 0z" fill="none" stroke="#00aeef" stroke-linecap="round" stroke-dasharray="0,5"/></g></g></g></g>
+                        </svg>
+                        <span class="build__wrapper-number">3</span>
+                    </div>
+                    <h3 class="build__wrapper-title">
+                        Сайт
+                    </h3>
+                    <p class="build__wrapper-desc">
+                        Клиенты могут получить к нему доступ и увидеть, когда введут ваш URL. различные типы хостинговых услуг, которые обслуживают различные типы бизнеса.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="hosting" id="hosting">
+    <div class="container">
+        <div class="hosting__wrapper">
+            <div class="hosting__text">
+                <h2 class="hosting__title">Что делает наш хостинг Wordpress лучшим?</h2>
+                <p class="hosting__desc">
+                    Мы поможем вам найти оптимальное сочетание наших технологий и опыта в сфере услуг для повышения производительности вашего предприятия. Присоединяйтесь к Bhost сейчас и получите бесплатное доменное имя!
+                </p>
+            </div>
+            <div class="hosting__wrapper-table">
+                <div class="hosting__wrapper-item">
+                    <div class="hosting__wrapper-picture">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="hosting__wrapper-title">
+                        Мгновенная настройка
+                    </h3>
+                    <p class="hosting__wrapper-desc">
+                        Сократите время развертывания, защитите ценный контент и ускорьте работу вашего сайта в среднем в 5 раз.                    
+                    </p>
+                </div>
+                <div class="hosting__wrapper-item">
+                    <div class="hosting__wrapper-picture">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="hosting__wrapper-title">
+                        Изоляция аккаунта
+                    </h3>
+                    <p class="hosting__wrapper-desc">
+                        Сократите время развертывания, защитите ценный контент и ускорьте работу вашего сайта в среднем в 5 раз.                      
+                    </p>
+                </div>
+                <div class="hosting__wrapper-item">
+                    <div class="hosting__wrapper-picture">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="hosting__wrapper-title">
+                        Планы хостинга
+                    </h3>
+                    <p class="hosting__wrapper-desc">
+                        Сократите время развертывания, защитите ценный контент и ускорьте работу вашего сайта в среднем в 5 раз.                      
+                    </p>
+                </div>
+                <div class="hosting__wrapper-item">
+                    <div class="hosting__wrapper-picture">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="hosting__wrapper-title">        
+                        Поддержка в чате
+                    </h3>
+                    <p class="hosting__wrapper-desc">
+                        Сократите время развертывания, защитите ценный контент и ускорьте работу вашего сайта в среднем в 5 раз.                      
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<svg width="0" height="0">
+    <radialGradient id="rg" r="150%" cx="30%" cy="107%">
+      <stop stop-color="#fdf497" offset="0" />
+      <stop stop-color="#fdf497" offset="0.05" />
+      <stop stop-color="#fd5949" offset="0.45" />
+      <stop stop-color="#d6249f" offset="0.6" />
+      <stop stop-color="#285AEB" offset="0.9" />
+    </radialGradient>
+</svg>
+        <section class="package" id="pricing">
+    <div class="container">
+        <div class="package__wrapper">
+            <div class="package__text">
+                <h2 class="package__title">
+                    Выберите свой пакет
+                </h2>
+                <p class="package__desc">
+                    Найдите идеальный пакет хостинга для себя, получите лучшие предложения по веб-хостингу сегодня! Bhost - одна из лучших услуг веб-хостинга. Присоединяйтесь к Bhost сейчас и получите бесплатное доменное имя!
+                </p>
+            </div>
+            <div class="package__slider" id="package-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="package__slider-content">
+                            <h3 class="package__slider-title">Начальный пакет</h3>
+                            <div class="package__slider-info">
+                                <div class="package__slider-cloud">
+                                    <img src="./images/package.png" alt="" class="package__slider-pic">
+                                    <div class="package__slider-number">$49</div>
+                                </div>
+                                <ul class="package__slider-achive">
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        1 Сайт
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        100 GB Места
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        До 10 пользователей
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="package__slider-desc">
+                                Найдите идеальный пакет хостинга для себя, получите лучшие предложения по веб-хостингу сегодня! Bhost - одна из лучших услуг веб-хостинга. Присоединяйтесь к Bhost сейчас и получите бесплатное доменное имя!
+                            </p>
+                            <button class="package__slider-btn">
+                                Начать
+                            </button>
+                        </div>
+                        <div class="package__slider-picture">
+                            <img src="./images/packageph.png" alt="" class="package__slider-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="package__slider-content">
+                            <h3 class="package__slider-title">Начальный пакет</h3>
+                            <div class="package__slider-info">
+                                <div class="package__slider-cloud">
+                                    <img src="./images/package.png" alt="" class="package__slider-pic">
+                                    <div class="package__slider-number">$49</div>
+                                </div>
+                                <ul class="package__slider-achive">
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        1 Сайт
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        100 GB Места
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        До 10 пользователей
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="package__slider-desc">
+                                Найдите идеальный пакет хостинга для себя, получите лучшие предложения по веб-хостингу сегодня! Bhost - одна из лучших услуг веб-хостинга. Присоединяйтесь к Bhost сейчас и получите бесплатное доменное имя!
+                            </p>
+                            <button class="package__slider-btn">
+                                Начать
+                            </button>
+                        </div>
+                        <div class="package__slider-picture">
+                            <img src="./images/packageph.png" alt="" class="package__slider-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="package__slider-content">
+                            <h3 class="package__slider-title">Начальный пакет</h3>
+                            <div class="package__slider-info">
+                                <div class="package__slider-cloud">
+                                    <img src="./images/package.png" alt="" class="package__slider-pic">
+                                    <div class="package__slider-number">$49</div>
+                                </div>
+                                <ul class="package__slider-achive">
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        1 Сайт
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        100 GB Места
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        До 10 пользователей
+                                    </li>
+                                    <li class="package__slider-item">
+                                        <i class="fas fa-check"></i>
+                                        Бесплатный домен
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="package__slider-desc">
+                                Найдите идеальный пакет хостинга для себя, получите лучшие предложения по веб-хостингу сегодня! Bhost - одна из лучших услуг веб-хостинга. Присоединяйтесь к Bhost сейчас и получите бесплатное доменное имя!
+                            </p>
+                            <button class="package__slider-btn">
+                                Начать
+                            </button>
+                        </div>
+                        <div class="package__slider-picture">
+                            <img src="./images/packageph.png" alt="" class="package__slider-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+        <section class="builder">
+    <div class="container">
+        <div class="builder__wrapper">
+            <div class="builder__content">
+                <div class="builder__body">
+                    <h2 class="builder__title">
+                        Конструктор веб-сайтов
+                    </h2>
+                    <p class="builder__desc">
+                        Услуги хостинга веб-сайтов - это, по сути, участок земли в Интернете, на котором находится ваша витрина. Если у вас есть веб-сайт, он должен быть в сети. Эти услуги хостинга - это арендодатели, которые размещают ваш сайт и поддерживают его работу.
+                    </p>
+                    <p class="builder__desc">
+                        Таким образом, ваш клиент может получить доступ и увидеть его, когда они введут ваш URL-адрес. Существуют разные типы хостинговых услуг, которые обслуживают разные типы бизнеса. 
+                    </p>
+                </div>
+            </div>
+            <div class="builder__picture ibg">
+                <img src="./images/builder.png" alt="" class="builder__img">
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="choose">
+    <div class="container">
+        <div class="choose__wrapper">
+            <h2 class="choose__title">
+                Как выбрать лучшую хостинговую компанию?
+            </h2>
+            <div class="choose__tabs">
+                <div class="choose__tabs-buttons">
+                    <button class="choose__tabs-btn" id="choose-btn" data-choose="bandwidth">
+                        Пропускная способность
+                    </button>
+                    <button class="choose__tabs-btn" id="choose-btn" data-choose="compatibility">
+                        Совместимость
+                    </button>
+                    <button class="choose__tabs-btn" id="choose-btn" data-choose="reliability">
+                        Надежность
+                    </button>
+                    <button class="choose__tabs-btn" id="choose-btn" data-choose="security">
+                        Защита
+                    </button>
+                    <button class="choose__tabs-btn" id="choose-btn" data-choose="shared">
+                        Общий
+                    </button>
+                    <button class="choose__tabs-btn" id="choose-btn" data-choose="loadtime">
+                        Врем загрузки
+                    </button>
+                </div>
+                <div class="choose__tabs-content">
+                    <div class="choose__tabs-item" id="choose-item" data-item="bandwidth">
+                        <div class="choose__tabs-text">
+                            <h3 class="choose__tabs-title">
+                                Первое, что вам нужно!
+                            </h3>
+                            <p class="choose__tabs-desc">
+                                Добро пожаловать в WHMCS! Вы сделали отличный выбор, и мы хотим помочь вам начать работу как можно быстрее. Это образец объявления. Объявления - это способ информировать ваших клиентов о новостях и специальных предложениях.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права. 
+                            </p>
+                        </div>
+                        <div class="choose__tabs-picture">
+                            <img src="./images/choose.png" alt="" class="choose__tabs-img">
+                        </div>
+                    </div>
+                    <div class="choose__tabs-item" id="choose-item" data-item="compatibility">
+                        <div class="choose__tabs-text">
+                            <h3 class="choose__tabs-title">
+                                Первое, что вам нужно!
+                            </h3>
+                            <p class="choose__tabs-desc">
+                                Добро пожаловать в WHMCS! Вы сделали отличный выбор, и мы хотим помочь вам начать работу как можно быстрее. Это образец объявления. Объявления - это способ информировать ваших клиентов о новостях и специальных предложениях.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права. 
+                            </p>
+                        </div>
+                        <div class="choose__tabs-picture">
+                            <img src="./images/choose.png" alt="" class="choose__tabs-img">
+                        </div>
+                    </div>
+                    <div class="choose__tabs-item" id="choose-item" data-item="reliability">
+                        <div class="choose__tabs-text">
+                            <h3 class="choose__tabs-title">
+                                Первое, что вам нужно!
+                            </h3>
+                            <p class="choose__tabs-desc">
+                                Добро пожаловать в WHMCS! Вы сделали отличный выбор, и мы хотим помочь вам начать работу как можно быстрее. Это образец объявления. Объявления - это способ информировать ваших клиентов о новостях и специальных предложениях.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права. 
+                            </p>
+                        </div>
+                        <div class="choose__tabs-picture">
+                            <img src="./images/choose.png" alt="" class="choose__tabs-img">
+                        </div>
+                    </div>
+                    <div class="choose__tabs-item" id="choose-item" data-item="security">
+                        <div class="choose__tabs-text">
+                            <h3 class="choose__tabs-title">
+                                Первое, что вам нужно!
+                            </h3>
+                            <p class="choose__tabs-desc">
+                                Добро пожаловать в WHMCS! Вы сделали отличный выбор, и мы хотим помочь вам начать работу как можно быстрее. Это образец объявления. Объявления - это способ информировать ваших клиентов о новостях и специальных предложениях.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права. 
+                            </p>
+                        </div>
+                        <div class="choose__tabs-picture">
+                            <img src="./images/choose.png" alt="" class="choose__tabs-img">
+                        </div>
+                    </div>
+                    <div class="choose__tabs-item" id="choose-item" data-item="shared">
+                        <div class="choose__tabs-text">
+                            <h3 class="choose__tabs-title">
+                                Первое, что вам нужно!
+                            </h3>
+                            <p class="choose__tabs-desc">
+                                Добро пожаловать в WHMCS! Вы сделали отличный выбор, и мы хотим помочь вам начать работу как можно быстрее. Это образец объявления. Объявления - это способ информировать ваших клиентов о новостях и специальных предложениях.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права. 
+                            </p>
+                        </div>
+                        <div class="choose__tabs-picture">
+                            <img src="./images/choose.png" alt="" class="choose__tabs-img">
+                        </div>
+                    </div>
+                    <div class="choose__tabs-item" id="choose-item" data-item="loadtime">
+                        <div class="choose__tabs-text">
+                            <h3 class="choose__tabs-title">
+                                Первое, что вам нужно!
+                            </h3>
+                            <p class="choose__tabs-desc">
+                                Добро пожаловать в WHMCS! Вы сделали отличный выбор, и мы хотим помочь вам начать работу как можно быстрее. Это образец объявления. Объявления - это способ информировать ваших клиентов о новостях и специальных предложениях.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права.
+                            </p>
+                            <p class="choose__tabs-desc">
+                                Честность, рабочие семьи, affiliamedicasl предлагает непреодолимые вызовы, диалоги, хакерский подход к борьбе с разнообразием малярии. Некоммерческие совместные города и катализатор Организации Объединенных Наций. Спасать жизни, внедрять голод, дальновидный ускоритель, разрушитель распознает потенциал. Волонтерские фонды неформальной экономики и экономики защищают репродуктивные права. 
+                            </p>
+                        </div>
+                        <div class="choose__tabs-picture">
+                            <img src="./images/choose.png" alt="" class="choose__tabs-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="counter">
+    <div class="container">
+        <div class="counter__wrapper">
+            <div class="counter__wrapper-item">
+              <div class="counter__wrapper-picture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="86" height="64"><defs><image width="86" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABACAMAAAC3B3BDAAAAAXNSR0IB2cksfwAAADNQTFRF////////////////////////////////////////////////////////////////////5RDoRwAAABF0Uk5TACBAf2Awn9//v3BQrxDvz4/Lx3q4AAABj0lEQVR4nNWYybaDIAxAZRBBBPv/X1uUZ52YExbvrj3XNIYkdBhSEMp2OE0+VsUoJnmiZoIh5VenR4Bj1m/pxgKK2Kig1GF5u3W0MeuWCdNo1SmrlGubVyelrd5kBjyq3mrCJXDnU61dCqxS1hZwNrGe6fhttOwFJSnYYO5ZvuyfYRJjzsoLrdKa8RJB7vCVButM97ckAx6LrS9SOf60a20iD2u7NnFGDMCaSAMFaUVMO4O0NqZlIK2MfTSgNpbcf6WNTNtiglISnbaFrCErz8+aDKFRX9wRo9jA4IRbpdI9rA4r7gcC0GYfsKsW0g8frOeYAJ6CO7/xY8ClFfTifK+L12Bn1rOPH4Jt9ecNNhKCbKuUwNdu4UIbVwjXzDpYpTR9tLqPlvXRiordswLVpRKcFrV/HSzAfS6Ca+e4fdHD+5xegjnJfuybCH4tzF067t98wK6xY6zjpuG4EA8GdZ6dqwJB9F43R7x4H/so4GJ6wb72RooQsApdojSwIlTsrkPmpbXzKJb5r4I28FR+AbPcgaLVoWeXAAAAAElFTkSuQmCC"/></defs><style/><g id="fact"><g id="info"><g id="Happy user"><g id="happy"><g id="icon count"><use id="bg" href="#img1" x="0" y="0"/></g></g></g></g></g></svg> 
+                <div class="counter__wrapper-overlay">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+              </div>  
+              <span class="counter__wrapper-number" id="counter" data-count="2514">
+                0
+              </span>
+              <p class="counter__wrapper-text">
+                Счастливых пользователей
+              </p>
+            </div>
+            <div class="counter__wrapper-item">
+                <div class="counter__wrapper-picture">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="86" height="64"><defs><image width="86" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABACAMAAAC3B3BDAAAAAXNSR0IB2cksfwAAADNQTFRF////////////////////////////////////////////////////////////////////5RDoRwAAABF0Uk5TACBAf2Awn9//v3BQrxDvz4/Lx3q4AAABj0lEQVR4nNWYybaDIAxAZRBBBPv/X1uUZ52YExbvrj3XNIYkdBhSEMp2OE0+VsUoJnmiZoIh5VenR4Bj1m/pxgKK2Kig1GF5u3W0MeuWCdNo1SmrlGubVyelrd5kBjyq3mrCJXDnU61dCqxS1hZwNrGe6fhttOwFJSnYYO5ZvuyfYRJjzsoLrdKa8RJB7vCVButM97ckAx6LrS9SOf60a20iD2u7NnFGDMCaSAMFaUVMO4O0NqZlIK2MfTSgNpbcf6WNTNtiglISnbaFrCErz8+aDKFRX9wRo9jA4IRbpdI9rA4r7gcC0GYfsKsW0g8frOeYAJ6CO7/xY8ClFfTifK+L12Bn1rOPH4Jt9ecNNhKCbKuUwNdu4UIbVwjXzDpYpTR9tLqPlvXRiordswLVpRKcFrV/HSzAfS6Ca+e4fdHD+5xegjnJfuybCH4tzF067t98wK6xY6zjpuG4EA8GdZ6dqwJB9F43R7x4H/so4GJ6wb72RooQsApdojSwIlTsrkPmpbXzKJb5r4I28FR+AbPcgaLVoWeXAAAAAElFTkSuQmCC"/></defs><style/><g id="fact"><g id="info"><g id="Happy user"><g id="happy"><g id="icon count"><use id="bg" href="#img1" x="0" y="0"/></g></g></g></g></g></svg> 
+                  <div class="counter__wrapper-overlay">
+                    <i class="far fa-file-pdf"></i>
+                  </div>
+                </div>  
+                <span class="counter__wrapper-number" id="counter" data-count="6875">
+                  0
+                </span>
+                <p class="counter__wrapper-text">
+                  Размещенные файлы
+                </p>
+              </div>
+              <div class="counter__wrapper-item">
+                <div class="counter__wrapper-picture">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="86" height="64"><defs><image width="86" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABACAMAAAC3B3BDAAAAAXNSR0IB2cksfwAAADNQTFRF////////////////////////////////////////////////////////////////////5RDoRwAAABF0Uk5TACBAf2Awn9//v3BQrxDvz4/Lx3q4AAABj0lEQVR4nNWYybaDIAxAZRBBBPv/X1uUZ52YExbvrj3XNIYkdBhSEMp2OE0+VsUoJnmiZoIh5VenR4Bj1m/pxgKK2Kig1GF5u3W0MeuWCdNo1SmrlGubVyelrd5kBjyq3mrCJXDnU61dCqxS1hZwNrGe6fhttOwFJSnYYO5ZvuyfYRJjzsoLrdKa8RJB7vCVButM97ckAx6LrS9SOf60a20iD2u7NnFGDMCaSAMFaUVMO4O0NqZlIK2MfTSgNpbcf6WNTNtiglISnbaFrCErz8+aDKFRX9wRo9jA4IRbpdI9rA4r7gcC0GYfsKsW0g8frOeYAJ6CO7/xY8ClFfTifK+L12Bn1rOPH4Jt9ecNNhKCbKuUwNdu4UIbVwjXzDpYpTR9tLqPlvXRiordswLVpRKcFrV/HSzAfS6Ca+e4fdHD+5xegjnJfuybCH4tzF067t98wK6xY6zjpuG4EA8GdZ6dqwJB9F43R7x4H/so4GJ6wb72RooQsApdojSwIlTsrkPmpbXzKJb5r4I28FR+AbPcgaLVoWeXAAAAAElFTkSuQmCC"/></defs><style/><g id="fact"><g id="info"><g id="Happy user"><g id="happy"><g id="icon count"><use id="bg" href="#img1" x="0" y="0"/></g></g></g></g></g></svg> 
+                  <div class="counter__wrapper-overlay">
+                    <i class="fas fa-file-alt"></i>
+                  </div>
+                </div>  
+                <span class="counter__wrapper-number" id="counter" data-count="25025">
+                 0  
+                </span>
+                <p class="counter__wrapper-text">
+                  Страниц обслужено
+                </p>
+              </div>
+              <div class="counter__wrapper-item">
+                <div class="counter__wrapper-picture">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="86" height="64"><defs><image width="86" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABACAMAAAC3B3BDAAAAAXNSR0IB2cksfwAAADNQTFRF////////////////////////////////////////////////////////////////////5RDoRwAAABF0Uk5TACBAf2Awn9//v3BQrxDvz4/Lx3q4AAABj0lEQVR4nNWYybaDIAxAZRBBBPv/X1uUZ52YExbvrj3XNIYkdBhSEMp2OE0+VsUoJnmiZoIh5VenR4Bj1m/pxgKK2Kig1GF5u3W0MeuWCdNo1SmrlGubVyelrd5kBjyq3mrCJXDnU61dCqxS1hZwNrGe6fhttOwFJSnYYO5ZvuyfYRJjzsoLrdKa8RJB7vCVButM97ckAx6LrS9SOf60a20iD2u7NnFGDMCaSAMFaUVMO4O0NqZlIK2MfTSgNpbcf6WNTNtiglISnbaFrCErz8+aDKFRX9wRo9jA4IRbpdI9rA4r7gcC0GYfsKsW0g8frOeYAJ6CO7/xY8ClFfTifK+L12Bn1rOPH4Jt9ecNNhKCbKuUwNdu4UIbVwjXzDpYpTR9tLqPlvXRiordswLVpRKcFrV/HSzAfS6Ca+e4fdHD+5xegjnJfuybCH4tzF067t98wK6xY6zjpuG4EA8GdZ6dqwJB9F43R7x4H/so4GJ6wb72RooQsApdojSwIlTsrkPmpbXzKJb5r4I28FR+AbPcgaLVoWeXAAAAAElFTkSuQmCC"/></defs><style/><g id="fact"><g id="info"><g id="Happy user"><g id="happy"><g id="icon count"><use id="bg" href="#img1" x="0" y="0"/></g></g></g></g></g></svg> 
+                  <div class="counter__wrapper-overlay">
+                    <i class="fas fa-cart-plus"></i>
+                  </div>
+                </div>  
+                <span class="counter__wrapper-number" id="counter" data-count="147">
+                  0
+                </span>
+                <p class="counter__wrapper-text">
+                  Наш магазин
+                </p>
+              </div>
+        </div>
+    </div>
+</div>
+        <section class="clients">
+    <div class="container">
+       <div class="clients__wrapper">
+        <h2 class="clients__title">Они счастливы!</h2>
+        <div class="swiper-container" id="clients-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="clients__bio">
+                        <h3 class="clients__bio-name">
+                          Аддисон Тэйлор
+                        </h3>
+                        <span class="client__bio-prof">
+                          CEO
+                        </span>
+                    </div>
+                    <p class="clients__desc">
+                      За ваш бизнес борется огромное количество провайдеров веб-хостинга. Как определить лучший? Если вы ищете надежную и доступную хостинговую компанию?
+                      Это правильное место для начала! Я доволен Bhost, одним из лучших хостингов.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="clients__bio">
+                        <h3 class="clients__bio-name">
+                          Майк Перри
+                        </h3>
+                        <span class="client__bio-prof">
+                          SEO
+                        </span>
+                    </div>
+                    <p class="clients__desc">
+                      За ваш бизнес борется огромное количество провайдеров веб-хостинга. Как определить лучший? Если вы ищете надежную и доступную хостинговую компанию?
+                      Это правильное место для начала! Я доволен Bhost, одним из лучших хостингов.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="clients__bio">
+                        <h3 class="clients__bio-name">
+                          Август Треморе
+                        </h3>
+                        <span class="client__bio-prof">
+                          Веб-дизайнер
+                        </span>
+                    </div>
+                    <p class="clients__desc">
+                      За ваш бизнес борется огромное количество провайдеров веб-хостинга. Как определить лучший? Если вы ищете надежную и доступную хостинговую компанию?
+                      Это правильное место для начала! Я доволен Bhost, одним из лучших хостингов.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="clients__bio">
+                        <h3 class="clients__bio-name">
+                          Алекс Уайтакер
+                        </h3>
+                        <span class="client__bio-prof">
+                          Бизнесмен
+                        </span>
+                    </div>
+                    <p class="clients__desc">
+                      За ваш бизнес борется огромное количество провайдеров веб-хостинга. Как определить лучший? Если вы ищете надежную и доступную хостинговую компанию?
+                      Это правильное место для начала! Я доволен Bhost, одним из лучших хостингов.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="clients__bio">
+                        <h3 class="clients__bio-name">
+                          Алена Водонаева
+                        </h3>
+                        <span class="client__bio-prof">
+                          Бизнесвумен
+                        </span>
+                    </div>
+                    <p class="clients__desc">
+                      За ваш бизнес борется огромное количество провайдеров веб-хостинга. Как определить лучший? Если вы ищете надежную и доступную хостинговую компанию?
+                      Это правильное место для начала! Я доволен Bhost, одним из лучших хостингов.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="clients__bio">
+                        <h3 class="clients__bio-name">
+                          Маргарита Ростовская
+                        </h3>
+                        <span class="client__bio-prof">
+                          SEO
+                        </span>
+                    </div>
+                    <p class="clients__desc">
+                      За ваш бизнес борется огромное количество провайдеров веб-хостинга. Как определить лучший? Если вы ищете надежную и доступную хостинговую компанию?
+                      Это правильное место для начала! Я доволен Bhost, одним из лучших хостингов.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+       </div>
+    </div>
+</section>
+        <div class="blog">
+    <div class="container">
+        <div class="blog__wrapper">
+            <div class="blog__wrapper-item">
+                <div class="blog__wrapper-picture">
+                    <img src="./images/blog1.png" alt="" class="blog__wrapper-img">
+                    <div class="blog__wrapper-date">
+                        6 Нояб
+                    </div>
+                </div>
+                <div class="blog__wrapper-content">
+                    <div class="blog__wrapper-top">
+                        <span class="blog__wrapper-name">Jordan Alba</span>
+                        <p class="blog__wrapper-question">
+                            Что такое услуги хостинга веб-сайтов
+                            и что подходит именно вам?
+                        </p>
+                    </div>
+                    <div class="blog__wrapper-bottom">
+                        <p class="blog__wrapper-desc">
+                           Общий хостинг - это самый популярный хостинг, где вы разделяете пропускную способность, дисковое пространство и емкость другой сети.
+                        </p>
+                        <div class="blog__wrapper-social">
+                            <button class="blog__wrapper-btn">
+                                Читать больше
+                            </button>
+                            <div class="blog__wrapper-side">
+                                <div class="blog__wrapper-comment">
+                                    <i class="far fa-comment"></i>
+                                </div>
+                                <div class="blog__wrapper-share">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__wrapper-item">
+                <div class="blog__wrapper-picture">
+                    <img src="./images/blog2.png" alt="" class="blog__wrapper-img">
+                    <div class="blog__wrapper-date">
+                        6 Нояб
+                    </div>
+                </div>
+                <div class="blog__wrapper-content">
+                    <div class="blog__wrapper-top">
+                        <span class="blog__wrapper-name">Jordan Alba</span>
+                        <p class="blog__wrapper-question">
+                            Что такое услуги хостинга веб-сайтов
+                            и что подходит именно вам?
+                        </p>
+                    </div>
+                    <div class="blog__wrapper-bottom">
+                        <p class="blog__wrapper-desc">
+                            Общий хостинг - это самый популярный хостинг, где вы разделяете пропускную способность, дисковое пространство и емкость другой сети.
+                        </p>
+                        <div class="blog__wrapper-social">
+                            <button class="blog__wrapper-btn">
+                                Читать больше
+                            </button>
+                            <div class="blog__wrapper-side">
+                                <button class="blog__wrapper-comment">
+                                    <i class="far fa-comment"></i>
+                                </button>
+                                <button class="blog__wrapper-share">
+                                    <i class="fas fa-share-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__wrapper-item">
+                <div class="blog__wrapper-picture">
+                    <img src="./images/blog3.png" alt="" class="blog__wrapper-img">
+                    <div class="blog__wrapper-date">
+                        6 Нояб
+                    </div>
+                </div>
+                <div class="blog__wrapper-content">
+                    <div class="blog__wrapper-top">
+                        <span class="blog__wrapper-name">Jordan Alba</span>
+                        <p class="blog__wrapper-question">
+                            Что такое услуги хостинга веб-сайтов
+                            и что подходит именно вам?
+                        </p>
+                    </div>
+                    <div class="blog__wrapper-bottom">
+                        <p class="blog__wrapper-desc">
+                            Общий хостинг - это самый популярный хостинг, где вы разделяете пропускную способность, дисковое пространство и емкость другой сети.
+                        </p>
+                        <div class="blog__wrapper-social">
+                            <button class="blog__wrapper-btn">
+                                Читать больше
+                            </button>
+                            <div class="blog__wrapper-side">
+                                <div class="blog__wrapper-comment">
+                                    <i class="far fa-comment"></i>
+                                </div>
+                                <div class="blog__wrapper-share">
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <section class="question">
+    <div class="container">
+        <div class="question__wrapper">
+            <h2 class="question__title">Остались вопросы?</h2>
+        <div class="question__table">
+            <div class="question__table-category">
+                <span class="question__table-desc">Категории:</span>
+                <ul class="question__table-variants">
+                    <li class="question__table-item">
+                        <a href="#inet" class="question__table-link" id="question-btn">Интернет (1)</a>
+                    </li>
+                    <li class="question__table-item">
+                        <a href="#host" class="question__table-link" id="question-btn">Хостинг (3)</a>
+                    </li>
+                    <li class="question__table-item">
+                        <a href="#servacc" class="question__table-link" id="question-btn">Серверные аксессуары(2)</a>
+                    </li>
+                    <li class="question__table-item">
+                        <a href="#servded" class="question__table-link" id="question-btn">Выделенный сервер (2)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="question__table-answer">
+                <div class="question__table-accordion" id="question-item" data-question="host">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">       
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">                
+                        Как выбрать свой хостинг?
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+                <div class="question__table-accordion" id="question-item" data-question="host">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">         
+                        Что такое облачный хостинг или услуги веб-хостинга?
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+                <div class="question__table-accordion" id="question-item" data-question="host">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">
+                        Как выбрать лучшую хостинговую компанию?
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+                <div class="question__table-accordion" id="question-item" data-question="inet">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">         
+                        Как выбрать лучшую хостинговую компанию?
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+                <div class="question__table-accordion" id="question-item" data-question="servacc">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">           
+                        Как выбрать лучшую хостинговую компанию?
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+                <div class="question__table-accordion" id="question-item" data-question="servacc">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">
+                        Как выбрать лучшую хостинговую компанию?                        
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+                <div class="question__table-accordion" id="question-item" data-question="servded">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">
+                        Как выбрать лучшую хостинговую компанию?                        
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+                <div class="question__table-accordion" id="question-item" data-question="servded">
+                    <div class="question__table-body" id="acc-body">
+                        <div class="question__table-content">   
+                            Лучшие услуги веб-хостинга серьезно затруднят запуск успешного веб-сайта. За ваш бизнес борется огромное количество провайдеров веб-хостинга. Пропускная способность, дисковое пространство, виртуальный хостинг, vps, время загрузки, поддержка клиентов и т. Д.
+                        </div>
+                    </div>
+                    <button class="question__table-header" id="acc-header">
+                        Как выбрать лучшую хостинговую компанию?                        
+                        <div class="question__table-side" id="acc-close">
+                            +
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+        <section class="newsletter">
+    <div class="container">
+        <div class="newsletter__wrapper">
+            <div class="newsletter__text">
+                <h3 class="newsletter__title">
+                    Подпишитесь на нашу рассылку новостей
+                </h3>
+                <p class="newsletter__desc">
+                    Подписка на рассылку новостей
+                </p>
+            </div>
+            <div class="newsletter__send">
+                <form action="#" class="newsletter__form">
+                    <div class="newsletter__form-place">
+                        <input type="text" class="newsletter__form-input">
+                    </div>
+                    <button class="newsletter__form-btn">Подписка</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="partners">
+    <div class="container">
+        <div class="partners__wrapper">
+            <div class="partners__slider" id="partners-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/partners.svg" alt="" class="partners__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/partners1.svg" alt="" class="partners__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/partners2.svg" alt="" class="partners__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/partners.svg" alt="" class="partners__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/partners1.svg" alt="" class="partners__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/partners2.svg" alt="" class="partners__img">
+                    </div>
+                </div>
+            </div>
+            <div class="partners__btns">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="partners__graphic">
+                <div class="partners__graphic-picture">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <span class="partners__graphic-title">Нужна помощь?</span>
+                <span class="partners__graphic-calc">Позвоните нам!</span>
+                <span class="partners__graphic-phone">+91 254 754 785</span>
+                <button class="partners__graphic-btn">Живой чат</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper-column">
+                <div class="footer__wrapper-item">
+                    <div class="footer__wrapper-picture">
+                        <img src="./images/logo.svg" alt="" class="footer__wrapper-img">
+                    </div>
+                    <p class="footer__wrapper-desc">
+                        Road No- 6, House- 25/A Dreamland Tower, Mancity,
+                    </p>
+                </div>
+                <div class="footer__wrapper-item">
+                    <span class="footer__wrapper-title">Социальные сети:</span>
+                    <ul class="footer__wrapper-list footer__wrapper-list-social">
+                        <li class="footer__wrapper-option">
+                            <a href="#!" class="footer__wrapper-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-option">
+                            <a href="#!" class="footer__wrapper-link">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-option">
+                            <a href="#!" class="footer__wrapper-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-option">
+                            <a href="#!" class="footer__wrapper-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer__wrapper-option">
+                            <a href="#!" class="footer__wrapper-link">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper-column">
+                <div class="footer__wrapper-item">
+                    <span class="footer__wrapper-title">Контакты:</span>
+                    <ul class="footer__wrapper-list">
+                        <li class="footer__wrapper-option">
+                            Телефон: +91 254 541 254
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Факс: +44 161 999 8888
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Почта: dreamland@dream.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper-item">
+                    <span class="footer__wrapper-title">Поддержка:</span>
+                    <ul class="footer__wrapper-list">
+                        <li class="footer__wrapper-option">
+                            Справочная
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Поддержка товаров
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Возврат средств
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper-column">
+                <div class="footer__wrapper-item">
+                    <span class="footer__wrapper-title">Дни работы:</span>
+                    <ul class="footer__wrapper-list">
+                        <li class="footer__wrapper-option">
+                            Понедельник, Вторник
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Четверг, Пятница
+                        </li>
+                        <li class="footer__wrapper-option">
+                            24/7 Поддержка в интернете
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper-item">
+                    <span class="footer__wrapper-title">Наше сообщество</span>
+                    <ul class="footer__wrapper-list">
+                        <li class="footer__wrapper-option">
+                            Форум
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Центр сообщества
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Встречи
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__wrapper-column">
+                <div class="footer__wrapper-item">
+                    <span class="footer__wrapper-title">Прочее:</span>
+                    <ul class="footer__wrapper-list footer__wrapper-list-column">
+                        <li class="footer__wrapper-option">
+                            Отзывы
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Обновления
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Команда
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__wrapper-item">
+                    <span class="footer__wrapper-title">Компания:</span>
+                    <ul class="footer__wrapper-list">
+                        <li class="footer__wrapper-option">
+                            Термины
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Лицензии
+                        </li>
+                        <li class="footer__wrapper-option">
+                            Стать партнером
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-rights">
+                <div class="footer__bottom-date">
+                    <i class="far fa-copyright"></i>
+                    2020 Roy Design.
+                </div>
+                <div class="footer__bottom-text">
+                    Все права защищены.
+                </div>
+            </div>
+            <ul class="footer__bottom-map">
+                <li class="footer__bottom-item">
+                    <a href="#!" class="footer__bottom-link">О нас</a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#!" class="footer__bottom-link">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#!" class="footer__bottom-link">Поддержка</a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#!" class="footer__bottom-link">Термины</a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#!" class="footer__bottom-link">Карта сайта</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    </div>
+  
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/7eaf2a9af1.js" crossorigin="anonymous"></script>
+    <script src="./javascript/main.min.js"></script>
+</body>
+</html>
