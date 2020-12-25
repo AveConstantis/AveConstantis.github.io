@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libraries/swiper.min.css">
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=abd134a1-fa66-4fe2-9d8b-97b8c0ce1d5e
+    &lang=ru_RU" type="text/javascript">
+    </script>
+    <style>
+        .ymaps-2-1-78-inner-panes {
+	        filter: brightness(20%) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" id="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__logo site__logo">
+                <svg class="header__logo-img site__logo-img" version="1.1" id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 480 480" xml:space="preserve">
+                    <path fill="#fff"
+                        d="M440 464v-41.424A39.36 39.36 0 00464 384c0-22.056-14.352-40-32-40s-32 17.944-32 40a39.36 39.36 0 0024 38.576V464h-40V216a8.001 8.001 0 00-4.424-7.16L320 179.056V136a8 8 0 00-5.8-7.696L208 97.96V8a8 8 0 00-8-8H40a8 8 0 00-8 8v456H0v16h480v-16h-40zm-248 0H48v-16h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72V96H48V64h72V48H48V16h144v448zm112 0h-96v-16h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-29.392l96 27.424V464zm64 0h-48v-16h24v-16h-24v-32h24v-16h-24v-32h24v-16h-24v-32h24v-16h-24v-32h24v-16h-24v-43.056l48 24V464zm56-59.44a27.953 27.953 0 01-8-20.56c0-13.008 7.328-24 16-24s16 10.992 16 24a28.003 28.003 0 01-8 20.56V392h-16v12.56z" />
+                </svg>
+                <span class="header__logo-title site__logo-title">
+                    Struc<span>ture</span>
+                </span>
+            </div>
+            <div class="header__side">
+                <nav class="header__nav" id="menu">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#home" class="header__nav-link header__nav-link--active" id="link">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#about" class="header__nav-link" id="link">About</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#gallery" class="header__nav-link" id="link">Gallery</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#services" class="header__nav-link" id="link">Services</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#team" class="header__nav-link" id="link">Team</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#price" class="header__nav-link" id="link">Price</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#news" class="header__nav-link" id="link">News</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#contact" class="header__nav-link" id="link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__search" id="search">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0"
+                        viewBox="0 0 56.966 56.966" xml:space="preserve">
+                        <path fill="#fff"
+                            d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                    </svg>
+                </button>
+                <button class="header__menu" id="menu-btn">
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                    <span class="header__menu-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__find" id="find">
+        <form action="#!" class="header__find-form">
+            <div class="header__find-place">
+                <input type="text">
+            </div>
+            <button class="header__find-btn">Search</button>
+        </form>
+    </div>
+</header>
+    <div class="site-wrapper">
+        <div class="intro" id="home">
+    <div class="swiper-container" id="intro-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide intro__slide" style="background-image: url('./images/intro/introslide1.jpg');">
+                <div class="container">
+                    <div class="intro__content">
+                        <div class="intro__content-text">
+                            <span class="intro__preview">
+                                We build your 
+                            </span>
+                            <h1 class="intro__title">
+                                <span>Dream</span> 
+                                House</h1>
+                            <h2 class="intro__subtitle">
+                                Fast & Safe Construction
+                            </h2>
+                            <p class="intro__content-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <button class="intro__btn site__btn">
+                            GET A QUOTE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide intro__slide" style="background-image: url('./images/intro/introslide2.png');">
+                <div class="container">
+                    <div class="intro__content">
+                        <div class="intro__content-text">
+                            <span class="intro__preview">
+                                We build your 
+                            </span>
+                            <h1 class="intro__title">
+                                <span>Dream</span> 
+                                House</h1>
+                            <h2 class="intro__subtitle">
+                                Fast & Safe Construction
+                            </h2>
+                            <p class="intro__content-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <button class="intro__btn site__btn">
+                            GET A QUOTE
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide intro__slide" style="background-image: url('./images/intro/introslide2.jpg');">
+                <div class="container">
+                    <div class="intro__content">
+                        <div class="intro__content-text">
+                            <span class="intro__preview">
+                                We build your 
+                            </span>
+                            <h1 class="intro__title">
+                                <span>Dream</span> 
+                                House</h1>
+                            <h2 class="intro__subtitle">
+                                Fast & Safe Construction
+                            </h2>
+                            <p class="intro__content-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                        <button class="intro__btn site__btn">
+                            GET A QUOTE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path fill="#fff" d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+        </div>
+        <div class="swiper-button-prev">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path fill="#fff" d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+        </div>
+    </div>
+</div>
+        <section class="contact" style="background-image: url(../images/contact/contactback.png);" id="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+            <div class="contact__text">
+                <h2 class="contact__title site__title">
+                    Need to consult with us?
+                </h2>
+                <p class="contact__desc">
+                    Ut quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <button class="contact__btn site__btn">
+                Contact Us
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path fill="#fff" d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+            </button>
+        </div>
+    </div>
+</section>  
+        <section class="builder" id="services">
+    <div class="container">
+        <div class="builder__text site__text">
+            <div class="builder__prev site__prev">
+                <span>You are most</span>
+            </div>
+            <h2 class="builder__title site__title">
+                WELLCOME TO
+                <span>STRUC BUILDER</span>
+            </h2>
+            <p class="builder__title site__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="builder__row site__row">
+            <div class="builder__row-item site__row-item">
+                <div class="builder__row-picture">
+                    <svg id="bold" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="M23.508.003c-4.685-.084-10.028 2.365-13.41 6.164A12.69 12.69 0 001.402 9.87a.5.5 0 00.28.851l3.854.552-.476.533a.5.5 0 00.02.687l6.427 6.427a.499.499 0 00.687.019l.533-.476.552 3.854c.027.188.175.326.354.386a.46.46 0 00.143.022.565.565 0 00.387-.161c2.285-2.285 3.61-5.432 3.671-8.664 3.803-3.389 6.272-8.73 6.163-13.409a.502.502 0 00-.489-.488zM18.9 8.635c-.487.487-1.127.731-1.768.731s-1.281-.244-1.768-.731a2.505 2.505 0 010-3.536c.975-.975 2.561-.975 3.536 0s.975 2.562 0 3.536zm-16.176 8.27c-1.07 1.07-2.539 5.904-2.703 6.451a.502.502 0 00.623.623c.547-.164 5.381-1.633 6.451-2.703a3.094 3.094 0 000-4.371 3.095 3.095 0 00-4.371 0z"/></svg>
+                </div>
+                <h3 class="builder__row-title">
+                    <span>Fair</span>
+                    Price
+                </h3>
+                <p class="builder__row-desc">
+                    Lorem ipsum dolor sit am consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore aliquip ex ea commodo consequat.
+                </p>
+                <a href="#!" class="builder__row-link">
+                    Read More
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                </a>
+            </div>
+            <div class="builder__row-item site__row-item">
+                <div class="builder__row-picture">
+                    <svg id="bold" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="M23.508.003c-4.685-.084-10.028 2.365-13.41 6.164A12.69 12.69 0 001.402 9.87a.5.5 0 00.28.851l3.854.552-.476.533a.5.5 0 00.02.687l6.427 6.427a.499.499 0 00.687.019l.533-.476.552 3.854c.027.188.175.326.354.386a.46.46 0 00.143.022.565.565 0 00.387-.161c2.285-2.285 3.61-5.432 3.671-8.664 3.803-3.389 6.272-8.73 6.163-13.409a.502.502 0 00-.489-.488zM18.9 8.635c-.487.487-1.127.731-1.768.731s-1.281-.244-1.768-.731a2.505 2.505 0 010-3.536c.975-.975 2.561-.975 3.536 0s.975 2.562 0 3.536zm-16.176 8.27c-1.07 1.07-2.539 5.904-2.703 6.451a.502.502 0 00.623.623c.547-.164 5.381-1.633 6.451-2.703a3.094 3.094 0 000-4.371 3.095 3.095 0 00-4.371 0z"/></svg>
+                </div>
+                <h3 class="builder__row-title">24/7 
+                    <span>support</span>
+                </h3>
+                <p class="builder__row-desc">
+                    Lorem ipsum dolor sit am consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore aliquip ex ea commodo consequat.
+                </p>
+                <a href="#!" class="builder__row-link">
+                    Read More
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                </a>
+            </div>
+            <div class="builder__row-item site__row-item">
+                <div class="builder__row-picture">
+                    <svg id="bold" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="M23.508.003c-4.685-.084-10.028 2.365-13.41 6.164A12.69 12.69 0 001.402 9.87a.5.5 0 00.28.851l3.854.552-.476.533a.5.5 0 00.02.687l6.427 6.427a.499.499 0 00.687.019l.533-.476.552 3.854c.027.188.175.326.354.386a.46.46 0 00.143.022.565.565 0 00.387-.161c2.285-2.285 3.61-5.432 3.671-8.664 3.803-3.389 6.272-8.73 6.163-13.409a.502.502 0 00-.489-.488zM18.9 8.635c-.487.487-1.127.731-1.768.731s-1.281-.244-1.768-.731a2.505 2.505 0 010-3.536c.975-.975 2.561-.975 3.536 0s.975 2.562 0 3.536zm-16.176 8.27c-1.07 1.07-2.539 5.904-2.703 6.451a.502.502 0 00.623.623c.547-.164 5.381-1.633 6.451-2.703a3.094 3.094 0 000-4.371 3.095 3.095 0 00-4.371 0z"/></svg>
+                </div>
+                <h3 class="builder__row-title">
+                    <span>Fast</span> 
+                    delivery</h3>
+                <p class="builder__row-desc">
+                    Lorem ipsum dolor sit am consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore aliquip ex ea commodo consequat.
+                </p>
+                <a href="#!" class="builder__row-link">
+                    Read More
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="video">
+   <video id="video" src="../libraries/video.mp4" muted loop></video>
+   <div class="video__content">
+        <div class="container">
+            <div class="video__text">
+                <div class="video__text-picture" id="video-btn">
+                    <img src="../images/video/play.svg" alt="Проиграть видео">
+                </div>
+                <div class="video__text-intro">
+                    <p>Process</p>
+                    <p class="video__text-play">Play Video</p>
+                </div>
+            </div>
+        </div>     
+   </div>
+</div>
+        <section class="offer">
+    <div class="container">
+        <div class="offer__text site__text">
+            <div class="offer__prev site__prev">
+                <span>We are skilled for</span>
+            </div>
+            <h2 class="offer__title site__title">
+                What
+                <span>we are offering</span>
+            </h2>
+        </div>
+        <div class="offer__row site__row">
+            <div class="offer__row-item site__row-item">
+                <div class="offer__row-picture">
+                    <img src="../images/offer/delivery.svg" alt="Иконка Предложения">
+                </div>
+                <div class="offer__row-content">
+                    <h3 class="offer__row-title">
+                        Best
+                        <span>Architecture</span>
+                    </h3>
+                    <p class="offer__row-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euxas 
+                        nulla Excepteur pariatur.</p>
+                </div>
+            </div>
+            <div class="offer__row-item site__row-item">
+                <div class="offer__row-picture">
+                    <img src="../images/offer/delivery.svg" alt="Иконка Предложения">
+                </div>
+                <div class="offer__row-content">
+                    <h3 class="offer__row-title">
+                        Eco
+                        <span>Energy</span>
+                    </h3>
+                    <p class="offer__row-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euxas 
+                        nulla Excepteur pariatur.</p>
+                </div>
+            </div>
+            <div class="offer__row-item site__row-item">
+                <div class="offer__row-picture">
+                    <img src="../images/offer/delivery.svg" alt="Иконка Предложения">
+                </div>
+                <div class="offer__row-content">
+                    <h3 class="offer__row-title">
+                        Tiling
+                        <span>& painting</span>
+                    </h3>
+                    <p class="offer__row-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euxas 
+                        nulla Excepteur pariatur.</p>
+                </div>
+            </div>
+            <div class="offer__row-item site__row-item">
+                <div class="offer__row-picture">
+                    <img src="../images/offer/delivery.svg" alt="Иконка Предложения">
+                </div>
+                <div class="offer__row-content">
+                    <h3 class="offer__row-title">
+                        Concrete
+                        <span>transport</span>
+                    </h3>
+                    <p class="offer__row-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euxas 
+                        nulla Excepteur pariatur.</p>
+                </div>
+            </div>
+            <div class="offer__row-item site__row-item">
+                <div class="offer__row-picture">
+                    <img src="../images/offer/delivery.svg" alt="Иконка Предложения">
+                </div>
+                <div class="offer__row-content">
+                    <h3 class="offer__row-title">
+                        Repair
+                        <span>service</span>
+                    </h3>
+                    <p class="offer__row-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euxas 
+                        nulla Excepteur pariatur.</p>
+                </div>
+            </div>
+            <div class="offer__row-item site__row-item">
+                <div class="offer__row-picture">
+                    <img src="../images/offer/delivery.svg" alt="Иконка Предложения">
+                </div>
+                <div class="offer__row-content">
+                    <h3 class="offer__row-title">Premium 
+                        <span>support</span>
+                    </h3>
+                    <p class="offer__row-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore euxas 
+                        nulla Excepteur pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>     
+        <section class="gallery" id="gallery">
+    <div class="gallery__wrapper">
+        <div class="gallery__text site__text">
+            <div class="gallery__prev site__prev">
+                <span>Our projects</span>
+            </div>
+            <h2 class="gallery__title site__title">
+                View our 
+                <span>projects gallery</span>
+            </h2>
+            <p class="gallery__desc site__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <ul class="gallery__category">
+            <li class="gallery__category-item">
+                <a href="#all" class="gallery__category-link" id="filter-btn">All</a>
+            </li>
+            <li class="gallery__category-item">
+                <a href="#construction" class="gallery__category-link" id="filter-btn">Constructions</a>
+            </li>
+            <li class="gallery__category-item">
+                <a href="#architecture" class="gallery__category-link" id="filter-btn">Architecture</a>
+            </li>
+            <li class="gallery__category-item">
+                <a href="#building" class="gallery__category-link" id="filter-btn">Building</a>
+            </li>
+            <li class="gallery__category-item">
+                <a href="#interior" class="gallery__category-link" id="filter-btn">Interior</a>
+            </li>
+            <li class="gallery__category-item">
+                <a href="#renovetion" class="gallery__category-link" id="filter-btn">Renovetion</a>
+            </li>
+        </ul>
+    </div>
+    <div class="gallery__slider" id="gallery-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery1.png);" id="filter-item" data-item="construction">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery4.png);" id="filter-item" data-item="interior">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery17.jpg);" id="filter-item" data-item="architecture">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery3.png);" id="filter-item" data-item="building">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery4.png);" id="filter-item" data-item="interior">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery5.jpg);" id="filter-item" data-item="renovetion">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery6.jpg);" id="filter-item" data-item="interior">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery7.jpg);" id="filter-item" data-item="renovetion">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery8.jpg);" id="filter-item" data-item="renovetion">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery9.jpg);" id="filter-item" data-item="architecture">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery10.jpg);" id="filter-item" data-item="renovetion">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery11.jpg);" id="filter-item" data-item="interior">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery12.jpg);" id="filter-item" data-item="building">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery13.jpg);" id="filter-item" data-item="architecture">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery14.jpg);" id="filter-item" data-item="architecture">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery15.jpg);" id="filter-item" data-item="building">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery16.jpg);" id="filter-item" data-item="construction">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery17.jpg);" id="filter-item" data-item="building">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery18.jpg);" id="filter-item" data-item="construction">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url(../images/gallery/gallery4.png);" id="filter-item" data-item="construction">
+                <div class="gallery__overlay">
+                    <div class="gallery__overlay-extend">
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/link.svg" alt="">
+                        </div>
+                        <div class="gallery__overlay-item">
+                            <img src="../images/gallery/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="gallery__btn site__btn">See All Works
+        <img src="../images/arrow.svg" alt="">
+    </button>
+</section>   
+        <div class="counter" style="background-image: url(../images/counter/counterback.png);">
+    <div class="container">
+        <div class="counter__wrapper">
+            <div class="counter__wrapper-item">
+                <div class="counter__wrapper-number">7260</div>
+                <div class="counter__wrapper-text">Projects Done</div>
+            </div>
+            <div class="counter__wrapper-item">
+                <div class="counter__wrapper-number">2480</div>
+                <div class="counter__wrapper-text">Creative materials</div>
+            </div>
+            <div class="counter__wrapper-item">
+                <div class="counter__wrapper-number">270</div>
+                <div class="counter__wrapper-text">Experienced Masters</div>
+            </div>
+            <div class="counter__wrapper-item">
+                <div class="counter__wrapper-number">2550</div>
+                <div class="counter__wrapper-text">Professional awards</div>
+            </div>
+        </div>
+    </div>
+</div>      
+        <section class="team" id="team">
+    <div class="container">
+        <div class="team__text site__text">
+            <div class="team__prev site__prev">
+                <span>We have creative</span>
+            </div>
+            <h2 class="team__title site__title">
+                Expert
+                <span>team members</span>
+            </h2>
+            <p class="team__desc site__desc">
+                Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+        </div>
+        <div class="team__slider" id="team-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide team__slide team__slide-left">
+                    <img class="team__slide-img" src="../images/team/team2.png" alt="Сотрудник">
+                    <div class="team__overlay">
+                        <div class="team__overlay-info">
+                            <p class="team__overlay-name">Devid Veone</p>
+                            <p class="team__overlay-prof">Sr.architect</p>
+                        </div>
+                        <ul class="team__overlay-social">
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide team__slide team__slide-center">
+                    <img class="team__slide-img" src="../images/team/team1.png" alt="Сотрудник">
+                    <div class="team__overlay">
+                        <div class="team__overlay-info">
+                            <p class="team__overlay-name">Devid Veone</p>
+                            <p class="team__overlay-prof">Sr.architect</p>
+                        </div>
+                        <ul class="team__overlay-social">
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide team__slide team__slide-right">
+                    <img class="team__slide-img" src="../images/team/team3.png" alt="Сотрудник">
+                    <div class="team__overlay">
+                        <div class="team__overlay-info">
+                            <p class="team__overlay-name">Devid Veone</p>
+                            <p class="team__overlay-prof">Sr.architect</p>
+                        </div>
+                        <ul class="team__overlay-social">
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                            <li class="team__overlay-item">
+                                <a href="" class="team__overlay-link">
+                                    <img class="team__overlay-img" src="../images/team/twitter.svg" alt="Социальная Иконка">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>   
+        <section class="testimonials">
+    <div class="container">
+        <div class="testiominals__text site__text">
+            <div class="testiomonials__prev site__prev">
+                <span>Clients feedback</span>
+            </div>
+            <h2 class="testimonials__title site__title">
+                Client 
+                <span>Testimonials</span>
+            </h2>
+            <p class="testiominals__desc site__desc">Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat</p>
+        </div>
+        <div class="testimonials__slider" id="testimonials-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonials__slider-top">
+                        <div class="testimonials__slider-picture">
+                            <img src="../images/testimonials/avatar.png" alt="Клиент">
+                        </div>
+                        <div class="testimonials__slider-text">
+                            <p class="testimonials__slider-name">Paul Irish</p>
+                            <p>Creative director</p>
+                        </div>
+                    </div>
+                    <p class="testimonials__slider-desc">
+                        It is a long established fact that a reader will be distracted readable content of a page when looking at its layout. The point of using rem
+                        Ipsum is that it has a look like readable English.
+                    </p>
+                    <div class="testimonials__slider-rating">
+
+                    </div>
+                    <div class="testimonials__slider-imzo">
+                        Paul
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials__slider-top">
+                        <div class="testimonials__slider-picture">
+                            <img src="../images/testimonials/avatar.png" alt="Клиент">
+                        </div>
+                        <div class="testimonials__slider-text">
+                            <p class="testimonials__slider-name">Paul Irish</p>
+                            <p>Creative director</p>
+                        </div>
+                    </div>
+                    <p class="testimonials__slider-desc">
+                        It is a long established fact that a reader will be distracted readable content of a page when looking at its layout. The point of using rem
+                        Ipsum is that it has a look like readable English.
+                    </p>
+                    <div class="testimonials__slider-rating">
+
+                    </div>
+                    <div class="testimonials__slider-imzo">
+                        Paul
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials__slider-top">
+                        <div class="testimonials__slider-picture">
+                            <img src="../images/testimonials/avatar.png" alt="Клиент">
+                        </div>
+                        <div class="testimonials__slider-text">
+                            <p class="testimonials__slider-name">Paul Irish</p>
+                            <p>Creative director</p>
+                        </div>
+                    </div>
+                    <p class="testimonials__slider-desc">
+                        It is a long established fact that a reader will be distracted readable content of a page when looking at its layout. The point of using rem
+                        Ipsum is that it has a look like readable English.
+                    </p>
+                    <div class="testimonials__slider-rating">
+
+                    </div>
+                    <div class="testimonials__slider-imzo">
+                        Paul
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      
+        <div class="about" id="about">
+    <div class="about__partners">
+        <div class="container">
+            <div class="about__partners-wrapper">
+                <div class="about__partners-item">
+                    <img src="../images/partners/partners1.png" alt="Партнеры">
+                </div>
+                <div class="about__partners-item">
+                    <img src="../images/partners/partners2.png" alt="Партнеры">
+                </div>
+                <div class="about__partners-item">
+                    <img src="../images/partners/partners3.png" alt="Партнеры">
+                </div>
+                <div class="about__partners-item">
+                    <img src="../images/partners/partners4.png" alt="Партнеры">
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="about__info">
+    <div class="container">
+        <div class="about__wrapper">
+            <div class="about__content">
+                <div class="about__body">
+                    <div class="about__text">
+                        <p class="about__prev">
+                            we are everywhere
+                        </p>
+                        <h2 class="about__title site__title">
+                            We provide extended warranties from
+                            <span>leading industry suppliers.</span>
+                        </h2>
+                        <p class="about__desc site__desc">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even variation passages slightly believable.
+                        </p>
+                    </div>
+                    <button class="about__btn site__btn">
+                        About Us
+                        <img src="../images/arrow.svg" alt="Стрелка">
+                    </button>
+                </div>
+            </div>
+            <div class="about__picture">
+                <img src="../images/about/about.png" alt="Карта мира">
+            </div>
+        </div>
+    </div>
+   </div>
+</div>  
+        <section class="newsletter">
+    <div class="container">
+        <div class="newsletter__wrapper">
+            <div class="newsletter__text">
+                <div class="newsletter__prev site__prev">
+                    <span>wANT TO GET UP TO DATE</span>
+                </div>
+                <h2 class="newsletter__title site__title">
+                    SUBSCRIBE OUR
+                    <span>NEWSLETTER</span>
+                </h2>
+            </div>
+            <form action="#!" class="newsletter__form">
+                <div class="newsletter__form-place">
+                    <input type="text">
+                </div>
+                <button class="newsletter__form-submit">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+</section>           
+        <section class="plan" id="price">
+    <div class="container">
+        <div class="plan__text site__text">
+            <div class="plan__prev site__prev">
+                <span>We offer OUR</span>
+            </div>
+            <h2 class="plan__title site__title">
+                Best 
+                <span>Pricing Plan</span>
+            </h2>
+            <p class="plan__desc site__desc">
+                Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+        </div>
+        <div class="plan__row site__row">
+            <div class="plan__row-item site__row-item">
+                <div class="plan__row-header">
+                    <p class="plan__row-package">
+                        STARTER
+                    </p>
+                    <p class="plan__row-desc">
+                        Suitable for starter
+                    </p>
+                </div>
+                <span class="plan__row-price">
+                    $199.99
+                </span>
+                <ul class="plan__row-list">
+                    <li class="plan__row-order">
+                        Construction Consulting
+                    </li>
+                    <li class="plan__row-order">
+                        Concrete Construction
+                    </li>
+                    <li class="plan__row-order">
+                        Design Build
+                    </li>
+                    <li class="plan__row-order plan__row-order-line">
+                        24/7 Customer Support
+                    </li>
+                    <li class="plan__row-order plan__row-order-line">
+                        Home Loan Help
+                    </li>
+                </ul>
+                <button class="plan__row-btn">
+                    Sign Up
+                </button>
+            </div>
+            <div class="plan__row-item site__row-item">
+                <div class="plan__row-header">
+                    <p class="plan__row-package">
+                        Advanced
+                    </p>
+                    <p class="plan__row-desc">
+                        Suitable for profession
+                    </p>
+                </div>
+                <span class="plan__row-price">
+                    $299.99
+                </span>
+                <ul class="plan__row-list">
+                    <li class="plan__row-order">
+                        Construction Consulting
+                    </li>
+                    <li class="plan__row-order">
+                        Concrete Construction
+                    </li>
+                    <li class="plan__row-order">
+                        Design Build
+                    </li>
+                    <li class="plan__row-order">
+                        24/7 Customer Support
+                    </li>
+                    <li class="plan__row-order plan__row-order-line">
+                        Home Loan Help
+                    </li>
+                </ul>
+                <button class="plan__row-btn">
+                    Sign Up
+                </button>
+            </div>
+            <div class="plan__row-item site__row-item">
+                <div class="plan__row-header">
+                    <p class="plan__row-package">
+                        Enterprise
+                    </p>
+                    <p class="plan__row-desc">
+                        Suitable for corporate
+                    </p>
+                </div>
+                <span class="plan__row-price">
+                    $499.99
+                </span>
+                <ul class="plan__row-list">
+                    <li class="plan__row-order">
+                        Construction Consulting
+                    </li>
+                    <li class="plan__row-order">
+                        Concrete Construction
+                    </li>
+                    <li class="plan__row-order">
+                        Design Build
+                    </li>
+                    <li class="plan__row-order">
+                        24/7 Customer Support
+                    </li>
+                    <li class="plan__row-order">
+                        Home Loan Help
+                    </li>
+                </ul>
+                <button class="plan__row-btn">
+                    Sign Up
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+   
+        <section class="news" id="news">
+    <div class="container">
+        <div class="news__text site__text">
+            <div class="news__prev site__prev">
+                <span>News Update</span>
+            </div>
+            <h2 class="news__title site__title">
+                Read
+                <span>Recent News</span>
+            </h2>
+            <p class="news__desc site__desc">
+                Dolore magna Quis nostrud exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat
+            </p>
+        </div>
+        <div class="news__row site__row">
+            <div class="news__row-item site__row-item">
+                <div class="news__row-picture">
+                    <img src="./images/blog/blog1.png" alt="Проделанная работа">
+                </div>
+                <div class="news__row-body">
+                    <h3 class="news__row-title">
+                        Surviving in Real Estate
+                    </h3>
+                    <div class="news__row-info">
+                        13 August, 2017     By : Admin
+                    </div>
+                    <p class="news__row-desc">
+                        It is a long established fact that a reader it’s    distracted by the readable content of a pages when looking at its layout.
+                    </p>
+                    <a href="#!" class="news__row-link">
+                        Read More
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path fill="#404040" d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="news__row-item site__row-item">
+                <div class="news__row-picture">
+                    <img src="./images/blog/blog2.png" alt="Проделанная работа">
+                </div>
+                <div class="news__row-body">
+                    <h3 class="news__row-title">
+                        Hiring Construction Expert
+                    </h3>
+                    <div class="news__row-info">
+                        13 August, 2017     By : Admin
+                    </div>
+                    <p class="news__row-desc">
+                        It is a long established fact that a reader it’s    distracted by the readable content of a pages when looking at its layout.
+                    </p>
+                    <a href="#!" class="news__row-link">
+                        Read More
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path fill="#404040" d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="news__row-item site__row-item">
+                <div class="news__row-picture">
+                    <img src="./images/blog/blog3.png" alt="Проделанная работа">
+                </div>
+                <div class="news__row-body">
+                    <h3 class="news__row-title">
+                        How to Use Safety Signs
+                    </h3>
+                    <div class="news__row-info">
+                        13 August, 2017     By : Admin
+                    </div>
+                    <p class="news__row-desc">
+                        It is a long established fact that a reader it’s    distracted by the readable content of a pages when looking at its layout.
+                    </p>
+                    <a href="#!" class="news__row-link">
+                        Read More
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 492.004 492.004" xml:space="preserve"><path fill="#404040" d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+        <div class="location__map" id="map" style="height: 600px; width: 100%;"></div>
+      
+        <section class="message">
+    <div class="container">
+        <div class="message__wrapper">
+            <div class="message__top">
+                <h2 class="message__top-title site__title">
+                    Send 
+                    <span>Massage</span>
+                </h2>
+                <form action="#!" class="message__form">
+                    <div class="message__form-place">
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="message__form-place">
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="message__form-textarea">
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <button class="message__form-submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="message__bottom">
+                <div class="message__bottom-item">
+                    <div class="message__bottom-picture">
+                        <img src="../images/message/map.svg" alt="Иконки контактов">
+                    </div>
+                    <div class="message__bottom-text">
+                        <span class="message__bottom-prev">Office Address</span>
+                        <p class="message__bottom-info">288 Hudson St, New York, NY 121</p>
+                    </div>
+                </div>
+                <div class="message__bottom-item">
+                    <div class="message__bottom-picture">
+                        <img src="../images/message/map.svg" alt="Иконки контактов">
+                    </div>
+                    <div class="message__bottom-text">
+                        <span class="message__bottom-prev">Toll free Number</span>
+                        <p class="message__bottom-info">(00) 122 224 220, (00) 221 472 720</p>
+                    </div>
+                </div>
+                <div class="message__bottom-item">
+                    <div class="message__bottom-picture">
+                        <img src="../images/message/map.svg" alt="Иконки контактов">
+                    </div>
+                    <div class="message__bottom-text">
+                        <span class="message__bottom-prev">Send mail</span>
+                        <p class="message__bottom-info">info@domainname.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>       
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__info footer__item">
+                <div class="footer__logo site__logo">
+                    <svg class="footer__logo-img site__logo-img" version="1.1" id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 480 480" xml:space="preserve">
+                    <path fill="#eee400"
+                        d="M440 464v-41.424A39.36 39.36 0 00464 384c0-22.056-14.352-40-32-40s-32 17.944-32 40a39.36 39.36 0 0024 38.576V464h-40V216a8.001 8.001 0 00-4.424-7.16L320 179.056V136a8 8 0 00-5.8-7.696L208 97.96V8a8 8 0 00-8-8H40a8 8 0 00-8 8v456H0v16h480v-16h-40zm-248 0H48v-16h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72v-16H48v-32h72V96H48V64h72V48H48V16h144v448zm112 0h-96v-16h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-32h56v-16h-56v-29.392l96 27.424V464zm64 0h-48v-16h24v-16h-24v-32h24v-16h-24v-32h24v-16h-24v-32h24v-16h-24v-32h24v-16h-24v-43.056l48 24V464zm56-59.44a27.953 27.953 0 01-8-20.56c0-13.008 7.328-24 16-24s16 10.992 16 24a28.003 28.003 0 01-8 20.56V392h-16v12.56z" />
+                </svg>
+                <span class="footer__logo-title site__logo-title">
+                    Struc<span>ture</span>
+                </span>
+                </div>
+                <p class="footer__info-desc">
+                    It is a long established fact that a readers will be distracted by the readable cotent of a page when looking at its layout. The hot point of using Lorem Ipsum.I
+                </p>
+                <p class="footer__info-desc">
+                    It is a long established fact that a reader distracted readable content.
+                </p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Our Services</h3>
+                <ul class="footer__services">
+                    <li class="footer__services-item">
+                        <img src="../images/footer/footeritem.svg" alt="">  Best Architecture
+                    </li>
+                    <li class="footer__services-item">
+                        <img src="../images/footer/footeritem.svg" alt="">  Eco Energy
+                    </li>
+                    <li class="footer__services-item">
+                        <img src="../images/footer/footeritem.svg" alt="">  Tiling & Painting
+                    </li>
+                    <li class="footer__services-item">
+                        <img src="../images/footer/footeritem.svg" alt="">  Concrete transport
+                    </li>
+                    <li class="footer__services-item">
+                        <img src="../images/footer/footeritem.svg" alt="">  Repair service
+                    </li>
+                    <li class="footer__services-item">
+                        <img src="../images/footer/footeritem.svg" alt="">  Premium support
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item footer__item-tweets">
+                <h2 class="footer__title">Recent Tweets</h2>
+                <ul class="footer__tweets">
+                    <li class="footer__tweets-item">
+                        <img src="../images/footer/twitter.svg" alt="">
+                        <div class="footer__tweets-content">
+                            <p class="footer__tweets-desc">
+                                Duis autem eum #equalizzer dolor it hendrerit in vulputate velit
+                            </p>
+                            <span class="footer__tweets-time">10 minute ago</span>
+                        </div>
+                    </li>
+                    <li class="footer__tweets-item">
+                        <img src="../images/footer/twitter.svg" alt="">
+                        <div class="footer__tweets-content">
+                            <p class="footer__tweets-desc">
+                                Duis autem eum #equalizzer dolor it hendrerit in vulputate velit
+                            </p>
+                            <span class="footer__tweets-time">10 minute ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h2 class="footer__title">Get in Touch</h2>
+                <ul class="footer__address">
+                    <li class="footer__address-item">
+                        <p class="footer__address-prev">Main Office:</p>
+                        <p class="footer__address-desc">
+                            SA Tower (Level-5), Plot#1,Road#134, Block SE(A), Gulshan-1, Dhaka 1212.
+                        </p>
+                    </li>
+                    <li class="footer__address-item">
+                        <p class="footer__address-prev">Phone:</p>
+                        <a href="" class="footer__address-phone">
+                            +00 122 224 220
+                        </a>
+                        <a href="" class="footer__address-phone">
+                            +00 221 472 720
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="footer__bottom-rights">© Copyrights 2017 Structure Theme. All rights reserved</p>
+    </div>
+</footer>
+
+      
+    </div>
+
+    
+    <script>
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 7,
+                controls: [],
+            }, {
+                suppressMapOpenBlock: true,
+                suppressObsoleteBrowserNotifier: true
+            });
+            myMap.behaviors.disable('scrollZoom');
+            myMap.behaviors.disable('drag');
+        }
+
+        ymaps.ready(init);
+        </script>
+    <script src="./libraries/swiper.min.js"></script>
+    <script src="./javascript/main.min.js"></script>
+</body>
+</html>
