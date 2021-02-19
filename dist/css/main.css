@@ -2904,11 +2904,14 @@ ul {
   .usp__card {
     position: relative;
     margin-bottom: 32px;
+    top: 0 !important;
+    left: 0 !important;
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
   }
 
   .usp__card:first-child {
-    top: 0;
-    left: 0;
     width: 100%;
     -webkit-transform: none;
         -ms-transform: none;
@@ -2916,39 +2919,23 @@ ul {
   }
 
   .usp__card:nth-child(2) {
-    top: 0;
     width: 50%;
     margin-left: auto;
   }
 
   .usp__card:nth-child(3) {
-    top: 0;
-    left: 0;
     width: 50%;
     margin-right: auto;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
   }
 
   .usp__card:nth-child(4) {
-    top: 0;
-    left: 0;
     width: 50%;
     margin-left: auto;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
   }
 
   .usp__card:nth-child(5) {
-    top: 0;
-    left: 0;
     width: 100%;
     margin-bottom: 0;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
   }
 
   .usp__card-hidden-inline {
